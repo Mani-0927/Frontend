@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+            /* justify-content: flex-start;     default */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            background-color: rgb(196, 255, 221);
+            align-items:baseline;
+            gap: 40px;
+        }
+
+        .item{
+            background-color: rgb(0, 221, 255);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+        }
+        .item:nth-child(2){
+            align-self: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+
+</html>
